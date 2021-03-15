@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" rel="stylesheet"/>
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="images/AgriveroLOGO copia.png" rel="icon" sizes="180x180" type="image/png"/>
+        <link href="images/AgriveroLOGO copia.png" rel="icon" sizes="32x32" type="image/png"/>
+        <link href="images/AgriveroLOGO copia.png" rel="icon" sizes="16x16" type="image/png"/>
+        <link color="#5bbad5" href="images/AgriveroLOGO copia.png" rel="icon"/>
+        <title>Contacto | AGRIVERO</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: #298f39;">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img alt="logo" class="d-inline-block align-top" height="30" src="images/AgriveroLOGO%20copia.png" width="30">
+                    AGRIVERO
+                </a>
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html"><i class="fas fa-th"></i> Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotros.html">
+                                <i class="fas fa-address-card"></i> Sobre Nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-4">
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                            <div class="form-group">
+                                <label for="nombre">Nombre*</label>
+                                <input class="form-control" maxlength="255" size="15" value="" id="nombre" title="Nombre" required/>
+                            </div>
+                             <div class="form-group">
+                                <label for="apellidos">Apellidos </label>
+                                <input class="form-control" maxlength="255" size="40" value="" id="apellidos" title="Apellidos" />
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Móvil</label>
+                                <input class="form-control" id="exampleInputPassword1" type="tel" title="Número de móvil">
+                            </div>
+                           <div class="form-group">
+                             <label class="description" for="element_8">Comunidad Autónoma </label>
+                             <select class="element select large" id="element_8" name="element_8" title="Comunidad Autonoma">
+                               <option value="" selected="selected">Seleccione</option>
+                               <option value="1" >Andalucía</option>
+                               <option value="2" >Aragón</option>
+                               <option value="3" >Asturias</option>
+                               <option value="4" >Baleares</option>
+                               <option value="5" >Cantabria</option>
+                               <option value="6" >Castilla y León</option>
+                               <option value="7" >Castilla-La Mancha</option>
+                               <option value="8" >Cataluña</option>
+                               <option value="9" >Comunidad Valenciana</option>
+                               <option value="10" >Extremadura</option>
+                               <option value="11" >Galicia</option>
+                               <option value="12" >Madrid</option>
+                               <option value="13" >Murcia</option>
+                               <option value="14" >Navarra</option>
+                               <option value="15" >País Vasco</option>
+                               <option value="16" >La Rioja</option>
+                               <option value="17" >Ceuta</option>
+                               <option value="18" >Melilla</option>
+                               </select>
+                           </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4">
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email*</label>
+                                <input class="form-control" id="exampleInputEmail1" type="email" title="Email (requerido)" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="text-area">Mensaje </label> <br />
+                          		<textarea cols="35" id="text-area" title="Mensaje"></textarea>
+                            </div>
+                          </fieldset>
+                            <fieldset>
+                            <legend>Motivo del mensaje</legend>
+                            <div class="form-group">
+                          			<input type="radio" value="1" id="rd1" title="Sugerencia"/>
+                          			<label for="rd1">Sugerencia</label>
+                          			<input type="radio" value="2" id="rd2" title="Queja o reclamación"/>
+                          			<label for="rd2">Queja / Reclamación</label>
+                          			<input class="element radio" type="radio" value="3" id="rd3" title="Solicitar trabajo"/>
+                          			<label class="choice" for="rd3">Búsqueda de trabajo</label>
+                            </div>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Adjuntos</legend>
+                            <div class="form-group">
+                              <p>Suba aquí cualquier documento que nos quiera hacer llegar</p>
+                                <input type="file" title="subir fichero adjunto"/>
+                                <input type="hidden" name="form_id" value="10968" />
+                            </div>
+                            <div>
+                          		<button class="btn btn-danger" type="reset" title="resetear formulario">Limpiar todo</button>
+                            </div>
+                          </fieldset>
+                      </div>
+                    <div class="col-6 offset-3 card mt-2 mb-2">
+                    <fieldset>
+                      <legend>Antibots</legend>
+                      <p>¿Es correcta la operación 1 + 1 = 7?</p>
+                      <label for="checkbox1">Sí</label>
+                      <input type="checkbox" name="checkbox1" value="true" id="checkbox1" title="si">
+                      <label for="checkbox2">No</label>
+                      <input type="checkbox" name="checkbox2" value="false" id="checkbox2" title="No">
+                    </fieldset>
+                  </div>
+                    <div class="col-6 offset-3">
+                        <button class="btn btn-block btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+            <div class="container">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="d-inline-block mr-2 nav-link social-icon" href="/">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a class="d-inline-block mr-2 nav-link social-icon" href="/">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a class="d-inline-block mr-2 nav-link social-icon" href="/">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a>
+                        <a class="d-inline-block mr-2 nav-link social-icon" href="/">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span class="d-none d-md-block navbar-text text-right">13 Rue del Percebe</span>
+                <span class="d-none d-md-block navbar-text text-right">H&eacute;ctor Jim&eacute;nez &copy; 2021</span>
+                <div class="d-block d-md-none">
+                    <span class="d-block navbar-text text-right">13 Rue del Percebe</span>
+                    <span class="d-block navbar-text text-right">H&eacute;ctor Jim&eacute;nez &copy; 2021</span>
+                </div>
+            </div>
+        </footer>
+        <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
